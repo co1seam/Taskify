@@ -1,0 +1,29 @@
+services:
+  golang:
+    container_name: wishverse-golang
+    hostname: wishverse-golang
+    build: ./build/golang
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+  postgres:
+    container_name: wishverse-postgres
+    restart: always
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    healthcheck:
+      test: pg_isready --username "postgres" --dbname "postgres"
+      interval: 1s
+      timeout: 5s
+      retries: 3
+    ports:
+      - 5436:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
