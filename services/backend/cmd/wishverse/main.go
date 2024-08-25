@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 
-	"github.com/co1seam/taskify/internal/app"
-	"github.com/co1seam/taskify/internal/config"
+	"github.com/co1seam/Taskify/service/backend/internal/app"
+	"github.com/co1seam/Taskify/service/backend/internal/config"
 	"github.com/sirupsen/logrus"
 )
 

@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/co1seam/taskify/internal/config"
-	"github.com/co1seam/taskify/internal/repository"
-	"github.com/co1seam/taskify/internal/services"
-	"github.com/co1seam/taskify/internal/transport/rest"
+	"github.com/co1seam/Taskify/service/backend/internal/config"
+	"github.com/co1seam/Taskify/service/backend/internal/repository"
+	"github.com/co1seam/Taskify/service/backend/internal/services"
+	"github.com/co1seam/Taskify/service/backend/internal/transport/rest"
 )
 
 type App struct {

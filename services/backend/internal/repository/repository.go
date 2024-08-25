@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/co1seam/taskify/internal/models"
+	"github.com/co1seam/Taskify/service/backend/internal/models"
 	"github.com/jmoiron/sqlx"
 )
 

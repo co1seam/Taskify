@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/co1seam/taskify/internal/models"
-	"github.com/co1seam/taskify/internal/repository"
+	"github.com/co1seam/Taskify/service/backend/internal/models"
+	"github.com/co1seam/Taskify/service/backend/internal/repository"
 )
 
 type Authorization interface{

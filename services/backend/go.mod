@@ -1,4 +1,4 @@
-module github.com/co1seam/taskify
+module github.com/co1seam/Taskify/service/backend
 
 go 1.22.5
 
