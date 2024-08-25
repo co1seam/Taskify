@@ -2,7 +2,7 @@ services:
   golang:
     container_name: wishverse-golang
     hostname: wishverse-golang
-    build: ./build/golang
+    build: ./etc/containers/golang
     ports:
       - "8080:8080"
     depends_on:
